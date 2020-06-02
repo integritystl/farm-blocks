@@ -1,5 +1,5 @@
 <?php
-$program = get_sub_field('enroll_program');
+$program = get_field('enroll_program');
 //What's the relevant key for that program?
 //What phase is that program in?
 $currentPhase = getProgramPhase($program);

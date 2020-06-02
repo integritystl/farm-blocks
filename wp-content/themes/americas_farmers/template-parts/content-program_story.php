@@ -1,7 +1,7 @@
 <?php
 // Grab the relevant fields
 //Which program is this?
-$program = get_sub_field('active_program');
+$program = get_field('active_program');
 //What phase is that program in?
 $currentPhase = getProgramPhase($program);
 //Which phases should this module be active during? (array)

@@ -25,11 +25,11 @@ $imgCalloutImage = get_field('image'); // Image Callout Background Image array
 $imgCalloutContent = get_field('image_content');
 ?>
 
-<div id="<?php echo esc_attr($id); ?>" class="image_callout flex-content-section <?php echo esc_attr($className);?>">
-	<img class="mobile-img" src="<?php echo $imgCalloutImage; ?>">
+<div class="image_callout flex-content-section" style="background-image:url('<?php echo $imgCalloutImage; ?>');">
 	<div class="container">
 		<div class="image_callout_content">
 			<?php echo $imgCalloutContent; ?>
 		</div>
 	</div>
 </div>
+
