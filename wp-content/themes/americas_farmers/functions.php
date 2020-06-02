@@ -19,6 +19,8 @@ require_once ( __DIR__ . '/theme_infrastructure/ACF/ACFHeroFields.php');
 require_once ( __DIR__ . '/theme_infrastructure/ACF/ACFPostFields.php');
 require_once ( __DIR__ . '/theme_infrastructure/Services/helpers.php');
 require_once ( __DIR__ . '/theme_infrastructure/Services/FinalistsParser.php');
+require_once ( __DIR__ . '/theme_infrastructure/CustomPostTypes/blocksCPT.php');
+require_once ( __DIR__ . '/theme_infrastructure/ACF/ACFBlocks.php');
 
 //Add our ACF template fields and custom post types and what not
 if( ! function_exists('americas_farmers_theme_infrastructure_setup')){
