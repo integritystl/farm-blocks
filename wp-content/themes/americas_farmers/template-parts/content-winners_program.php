@@ -7,7 +7,7 @@
 
 // Grab the relevant fields
 //Which program is this?
-$program = get_sub_field('program');
+$program = get_field('program');
 //What's the relevant key for that program?
 $programKey = get_field('program_key', $program);
 //What phase is that program in?
