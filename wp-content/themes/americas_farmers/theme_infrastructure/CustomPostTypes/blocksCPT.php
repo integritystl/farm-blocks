@@ -132,6 +132,46 @@
                 'icon'              => 'admin-links',
                 'keywords'          => array( 'related', 'links', 'buttons' ),
             ));
+
+             // register Rural Enrollment.
+            acf_register_block_type(array(
+                'name'              => 'rural_enrollment',
+                'title'             => __('Rural Enrollment'),
+                'render_template'   => 'template-parts/block-content/content-block_rural_enrollment.php',
+                'category'          => 'common',
+                'icon'              => 'megaphone',
+                'keywords'          => array( 'rural', 'enroll', 'enrollment' ),
+            ));
+
+            // register Steps.
+            acf_register_block_type(array(
+                'name'              => 'steps',
+                'title'             => __('Steps'),
+                'render_template'   => 'template-parts/block-content/content-block_steps.php',
+                'category'          => 'layout',
+                'icon'              => 'editor-ol',
+                'keywords'          => array( 'steps' ),
+            ));
+
+            // register Story Phase.
+            acf_register_block_type(array(
+                'name'              => 'story_phase',
+                'title'             => __('Story Phase'),
+                'render_template'   => 'template-parts/block-content/content-block_story_phase.php',
+                'category'          => 'common',
+                'icon'              => 'format-status',
+                'keywords'          => array( 'story', 'program' ),
+            ));
+
+            // register Video Callout.
+            acf_register_block_type(array(
+                'name'              => 'video_callout',
+                'title'             => __('Video Callout'),
+                'render_template'   => 'template-parts/block-content/content-block_video_callout.php',
+                'category'          => 'common',
+                'icon'              => 'video-alt3',
+                'keywords'          => array( 'video', 'callout' ),
+            ));
         }
     }
 

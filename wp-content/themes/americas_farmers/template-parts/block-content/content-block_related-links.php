@@ -12,8 +12,10 @@
       <div class="container">
         <h3>Related Links</h3>
         <ul>
+          <?php global $post; ?>
           <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
               <?php setup_postdata($post); ?>
+              
               <li>
                   <h4 class="related-link__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                   <span class="related-link__excerpt"><?php short_excerpt(get_the_excerpt(), get_the_ID()); ?></span>
