@@ -3,7 +3,6 @@
 *
 * Component to call for latest Posts/Stories to appear on the page.
 *
-* @param 'content' recent_stories_component
 *
 **/
 
