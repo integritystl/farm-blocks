@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     add_action('acf/init', 'my_acf_init_block_types');
     function my_acf_init_block_types() {
@@ -15,6 +15,7 @@
                 'category'          => 'formatting',
                 'icon'              => 'format-image',
                 'keywords'          => array( 'image', 'callout' ),
+                'mode'              => 'edit',
             ));
 
             // register a Winners block.
@@ -26,6 +27,7 @@
                 'category'          => 'layout',
                 'icon'              => 'megaphone',
                 'keywords'          => array( 'winners', 'announce' ),
+                'mode'              => 'edit',
             ));
             // register a Announe Finalists block.
 
@@ -38,6 +40,7 @@
                 'category'          => 'layout',
                 'icon'              => 'megaphone',
                 'keywords'          => array( 'finalists', 'announce' ),
+                'mode'              => 'edit',
             ));
             // register a Announce Callout.
                 //I am not doing this one and seeing if we can take care of this with just the 'title' block with some styles
@@ -50,6 +53,7 @@
                 'category'          => 'common',
                 'icon'              => 'media-default',
                 'keywords'          => array( 'document', 'downloads' ),
+                'mode'              => 'edit',
             ));
 
             // register a FAQ block.
@@ -60,6 +64,7 @@
                 'category'          => 'common',
                 'icon'              => 'editor-help',
                 'keywords'          => array( 'questions', 'frequently', 'faq' ),
+                'mode'              => 'edit',
             ));
 
             // register a fifty fifty repeater.
@@ -70,6 +75,7 @@
                 'category'          => 'layout',
                 'icon'              => 'tagcloud',
                 'keywords'          => array( 'fifty', 'image' ),
+                'mode'              => 'edit',
             ));
 
             // register a Get Nominations.
@@ -80,6 +86,7 @@
                 'category'          => 'layout',
                 'icon'              => 'awards',
                 'keywords'          => array( 'nominations', 'program' ),
+                'mode'              => 'edit',
             ));
 
             // register a GRE Winners.
@@ -91,6 +98,7 @@
                 'category'          => 'layout',
                 'icon'              => 'awards',
                 'keywords'          => array( 'winners', 'program', 'gre' ),
+                'mode'              => 'edit',
             ));
 
             // register a People Component.
@@ -101,6 +109,7 @@
                 'category'          => 'common',
                 'icon'              => 'admin-users',
                 'keywords'          => array( 'people', 'profile' ),
+                'mode'              => 'edit',
             ));
 
             // register Program Announcement.
@@ -111,6 +120,7 @@
                 'category'          => 'layout',
                 'icon'              => 'schedule',
                 'keywords'          => array( 'cards', 'announce', 'program' ),
+                'mode'              => 'edit',
             ));
 
              // register Program Announcement.
@@ -121,6 +131,7 @@
                 'category'          => 'common',
                 'icon'              => 'media-document',
                 'keywords'          => array( 'stories', 'posts', 'recent' ),
+                'mode'              => 'edit',
             ));
 
             // register Program Announcement.
@@ -131,6 +142,7 @@
                 'category'          => 'common',
                 'icon'              => 'admin-links',
                 'keywords'          => array( 'related', 'links', 'buttons' ),
+                'mode'              => 'edit',
             ));
 
              // register Rural Enrollment.
@@ -141,6 +153,7 @@
                 'category'          => 'common',
                 'icon'              => 'megaphone',
                 'keywords'          => array( 'rural', 'enroll', 'enrollment' ),
+                'mode'              => 'edit',
             ));
 
             // register Steps.
@@ -151,6 +164,7 @@
                 'category'          => 'layout',
                 'icon'              => 'editor-ol',
                 'keywords'          => array( 'steps' ),
+                'mode'              => 'edit',
             ));
 
             // register Story Phase.
@@ -161,6 +175,7 @@
                 'category'          => 'common',
                 'icon'              => 'format-status',
                 'keywords'          => array( 'story', 'program' ),
+                'mode'              => 'edit',
             ));
 
             // register Video Callout.
@@ -171,6 +186,7 @@
                 'category'          => 'common',
                 'icon'              => 'video-alt3',
                 'keywords'          => array( 'video', 'callout' ),
+                'mode'              => 'edit',
             ));
         }
     }

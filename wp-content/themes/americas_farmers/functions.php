@@ -114,9 +114,17 @@ if ( ! function_exists( 'americas_farmers_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+
 	}
 endif;
 add_action( 'after_setup_theme', 'americas_farmers_setup' );
+
+add_action( 'enqueue_block_editor_assets', 'example_block_editor_scripts' );
+
+
+add_editor_style( 'style.css' );
+add_theme_support( 'editor-styles' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -203,7 +211,6 @@ function americas_farmers_scripts() {
 	wp_enqueue_style( 'americas_farmers-style_animate', '//cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css');
 
 	wp_enqueue_style( 'americas_farmers-style', get_stylesheet_uri(), array(), time());
-
 
 	wp_enqueue_script('americas_farmers_scripts');
 	wp_enqueue_script('parsley', get_template_directory_uri() . '/js/libs/parsley.min.js', array('jquery'), time(), true);
