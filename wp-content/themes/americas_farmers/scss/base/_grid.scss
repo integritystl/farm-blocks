@@ -42,3 +42,8 @@ $headerMenu-min: (columns: 12, gutter: 20px, media: $headerMenu + 1);
 .content-area {
   background: $greyLight;
 }
+
+
+.wp-block {
+    max-width: 100%;
+}
