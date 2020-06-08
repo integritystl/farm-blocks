@@ -126,6 +126,7 @@ add_action( 'enqueue_block_editor_assets', 'example_block_editor_scripts' );
 add_editor_style( 'style.css' );
 add_theme_support( 'editor-styles' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

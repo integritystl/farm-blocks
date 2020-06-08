@@ -188,6 +188,17 @@
                 'keywords'          => array( 'video', 'callout' ),
                 'mode'              => 'edit',
             ));
+
+            // register Wysiwyg.
+            acf_register_block_type(array(
+                'name'              => 'wysiwyg',
+                'title'             => __('Wysiwyg Editor'),
+                'render_template'   => 'template-parts/block-content/content-block_wysiwyg.php',
+                'category'          => 'common',
+                'icon'              => 'editor-paragraph',
+                'keywords'          => array( 'content', 'paragraph', 'text', 'wysiwyg' ),
+                'mode'              => 'edit',
+            ));
         }
     }
 
