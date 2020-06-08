@@ -191,7 +191,7 @@
 
             // register Wysiwyg.
             acf_register_block_type(array(
-                'name'              => 'wysiwyg',
+                'name'              => 'wysiwyg-content',
                 'title'             => __('Wysiwyg Editor'),
                 'render_template'   => 'template-parts/block-content/content-block_wysiwyg.php',
                 'category'          => 'common',
