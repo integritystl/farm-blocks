@@ -6,12 +6,11 @@
 *
 **/
 
-$field = get_sub_field('content_layout');
 ?>
 
 <div class="wysiwyg-wrapper">
 
-	<div class="wysiwyg flex-content-section  <?php echo $field; ?>">
+	<div class="wysiwyg flex-content-section">
 		<?php
 			the_field('content');
 		?>
