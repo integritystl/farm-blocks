@@ -10,7 +10,6 @@
 require_once ( __DIR__ . '/theme_infrastructure/vendor_packages/autoload.php');
 //SF Stuff
 require_once ( __DIR__ . '/theme_infrastructure/SalesForceAPI/SalesforceAPICalls.php');
-require_once ( __DIR__ . '/theme_infrastructure/ACF/ACFTemplateFields.php');
 require_once ( __DIR__ . '/theme_infrastructure/ACF/ACFOptionsPage.php');
 require_once ( __DIR__ . '/theme_infrastructure/CustomPostTypes/ProgramCPT.php');
 require_once ( __DIR__ . '/theme_infrastructure/CustomPostTypes/GALWinnerCPT.php');
@@ -25,7 +24,6 @@ require_once ( __DIR__ . '/theme_infrastructure/ACF/ACFBlocks.php');
 //Add our ACF template fields and custom post types and what not
 if( ! function_exists('americas_farmers_theme_infrastructure_setup')){
 	function americas_farmers_theme_infrastructure_setup(){
-		\AmericasFarmers\ACFTemplateFields::setupTemplateFields();
 		\AmericasFarmers\ACFOptionsPage::setupOptionsPage();
 		\AmericasFarmers\ACFHeaderSettings::setupHeaderSettings();
 		\AmericasFarmers\ProgramCPT::setupPrograms();
