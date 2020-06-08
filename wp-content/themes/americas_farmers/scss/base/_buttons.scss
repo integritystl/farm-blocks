@@ -1,3 +1,4 @@
+.site, .acf-block-component{
 button,
 .button,
 .gform_button {
@@ -28,7 +29,7 @@ button,
 
   &:after {
     content: '\f061';
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Pro" !important;
     font-weight: 400;
     font-size: 12px;
     margin-left: 17px;
@@ -117,3 +118,48 @@ button.no-arrow,
     }
   }
 }
+}
+
+/*Not sure where we want this but it needs to be somewhere to stop sytles from jacking with stuff*/
+.components-button .components-icon-button .components-toolbar__control .has-icon{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: none;
+    transition: box-shadow .1s linear;
+    height: 36px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 8px;
+    overflow: hidden;
+    border-radius: 3px;
+    color: #555d66;
+  }
+  .acf-editor-wrap, .wp-editor-tools, .quicktags-toolbar{
+    button, .button, .button-primary{
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 13px;
+      margin: 0;
+      border: 0;
+      cursor: pointer;
+      -webkit-appearance: none;
+      background: none;
+      transition: box-shadow .1s linear;
+      height: 36px;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 8px;
+      overflow: hidden;
+      border-radius: 3px;
+      color: #555d66;
+      &:after{
+        display:none;
+      }
+    }
+      
+  }
