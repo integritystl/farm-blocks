@@ -69,13 +69,13 @@
 		'description' => '',
 	));
 
-	//Image Callout
+	//Wysiwyg 
 	acf_add_local_field_group(array(
-		'key' => 'group_5ed654089skdj',
+		'key' => 'group_5ed65408345rfgh',
 		'title' => 'Block: Wysiwyg',
 		'fields' => array(
 			array(
-				'key' => 'field_5b0d7c488062a',
+				'key' => 'field_5b0d98ujnbvgh',
 				'label' => 'Content',
 				'name' => 'content',
 				'type' => 'wysiwyg',
@@ -99,7 +99,7 @@
 				array(
 					'param' => 'block',
 					'operator' => '==',
-					'value' => 'acf/wysiwyg',
+					'value' => 'acf/wysiwyg-content',
 				),
 			),
 		),
