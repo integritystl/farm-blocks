@@ -766,15 +766,15 @@
 		'description' => '',
 	));
 
-	//Get Noms
+	//Get GRE Winners
 	acf_add_local_field_group(array(
-		'key' => 'group_5ed654f721098skj',
-		'title' => 'Block: Get Nominations',
+		'key' => 'group_5ed654f72asdfae',
+		'title' => 'Block: Get GRE Winners',
 		'fields' => array(
 			array(
 				'key' => 'field_5eab1a9ertgfvghj',
 				'label' => 'Winners',
-				'name' => '',
+				'name' => 'gre_msg',
 				'type' => 'message',
 				'instructions' => '',
 				'required' => 0,
@@ -791,7 +791,7 @@
 			array(
 				'key' => 'field_5ea345rfgh',
 				'label' => 'Winners Program',
-				'name' => 'Program',
+				'name' => 'gre_program',
 				'type' => 'post_object',
 				'instructions' => '',
 				'required' => 0,

@@ -7,27 +7,31 @@
 
 // Grab the relevant fields
 //Which program is this?
-$program = get_field('program');
+$program = get_field('gre_program');
 //What's the relevant key for that program?
 $programKey = get_field('program_key', $program);
+//What phase is that program in?
+$currentPhase = getProgramPhase($program);
 //Which phases should this module be active during? (array)
-
+$activePhases = get_field('active_phases');
+//Is the current phase in the list of active phases?
+// $moduleEnabled = in_array($currentPhase, $activePhases);
+//If the current phases is an active phase, render the module, otherwise don't render anything
+//NOTE: The year we pass for program display year to the API won't always match the year displayed on the frontend in the h2.
 //We have a content managed field instead of using the year passed to the API
 $year = get_field('program_display_year', $program);
 $program_display_year = empty($year) ? date('Y') : $year;
-//From theme_infrastructure/services/helpers.php
-	$states = getStateArray();
 
-$winnersContent = get_field('winners_content_blurb', $program);
+
+//From theme_infrastructure/services/helpers.php
+$states = getStateArray();
 
 ?>
 
 	<div id="announce_winners" data-program="<?php echo $programKey;?>" class="<?php echo $programKey; ?>">
-		<?php if ($winnersContent){ ?>
-			<div class="announce_winners_blurb">
-				<?php echo $winnersContent; ?>
-			</div>
-		<?php } ?>
+		<div class="announce_winners_blurb">
+			<?php echo get_field('winners_content_blurb', $program); ?>
+		</div>
 		<h4 class="announce_winners_title">Grow<span class="announce_winners_program_title"><?php echo $programKey; ?></span></h4>
 		<h2 class="winners_year" data-program-year="<?php echo $program_display_year;?>"><?php echo $program_display_year;?> WINNERS</h2>
 
@@ -61,4 +65,5 @@ $winnersContent = get_field('winners_content_blurb', $program);
 			<h4>If this problem persists, please email us <a href="mailto:americas.farmers@monsanto.com">here</a></h4>
 		</div>
 	</div>
+
 

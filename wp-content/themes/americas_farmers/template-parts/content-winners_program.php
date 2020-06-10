@@ -13,7 +13,7 @@ $programKey = get_field('program_key', $program);
 //What phase is that program in?
 $currentPhase = getProgramPhase($program);
 //Which phases should this module be active during? (array)
-$activePhases = get_sub_field('active_phases');
+$activePhases = get_field('active_phases');
 //Is the current phase in the list of active phases?
 // $moduleEnabled = in_array($currentPhase, $activePhases);
 //If the current phases is an active phase, render the module, otherwise don't render anything
