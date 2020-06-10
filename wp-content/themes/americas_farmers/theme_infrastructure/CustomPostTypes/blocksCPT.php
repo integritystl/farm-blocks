@@ -189,8 +189,21 @@
                 'mode'              => 'edit',
             ));
 
+            // register Wizywig.
+            acf_register_block_type(array(
+                'name'              => 'basic_wysiwyg',
+                'title'             => __('Basic Content'),
+                'render_template'   => 'template-parts/block-content/content-block_basic_wysiwyg.php',
+                'category'          => 'common',
+                'icon'              => '',
+                'keywords'          => array( 'paragraph', 'heading', 'wysiwyg', 'content' ),
+                'mode'              => 'edit',
+            ));
+
         }
     }
+
+    
 
 
 ?>

@@ -71,11 +71,11 @@
 
 	//Wysiwyg 
 	acf_add_local_field_group(array(
-		'key' => 'group_5ed65408345rfgh',
+		'key' => 'group_5ed6540823edfrghu',
 		'title' => 'Block: Wysiwyg',
 		'fields' => array(
 			array(
-				'key' => 'field_5b0d98ujnbvgh',
+				'key' => 'field_5b0d98087sdkjs',
 				'label' => 'Content',
 				'name' => 'content',
 				'type' => 'wysiwyg',
@@ -99,7 +99,7 @@
 				array(
 					'param' => 'block',
 					'operator' => '==',
-					'value' => 'acf/wysiwyg-content',
+					'value' => 'acf/basic-wysiwyg',
 				),
 			),
 		),
