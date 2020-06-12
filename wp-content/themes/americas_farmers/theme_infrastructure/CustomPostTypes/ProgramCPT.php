@@ -24,6 +24,7 @@ class ProgramCPT
 	        'show_in_menu' => true,
 	        'show_in_rest' => true,
 	        'has_archive' => false,
+	        'supports' => false,
 			'menu_icon' => 'dashicons-text-page',
 	      )
 	    );

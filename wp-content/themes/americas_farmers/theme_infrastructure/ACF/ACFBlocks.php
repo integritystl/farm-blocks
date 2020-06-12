@@ -210,8 +210,8 @@
 			),
 			array(
 				'key' => 'field_finalist_program',
-				'label' => 'Program',
-				'name' => 'program',
+				'label' => 'Finalist Program',
+				'name' => 'announce_program',
 				'type' => 'post_object',
 				'instructions' => '',
 				'required' => 1,

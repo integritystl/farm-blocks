@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
 
         //Sort data by county
         if (returnData === undefined || returnData.length == 0) {
-          var display = "<p class='announce_finalists_blurb'>Unfortunately there are no finalists for your state. The grant program opens again January 1, 2019. Tell a farmer to nominate a school in your area at <a href='http://www.AmericasFarmers.com'>www.AmericasFarmers.com</a>.</p>";
+          var display = "<p class='announce_finalists_blurb'>Unfortunately there are no finalists for your state. The grant program opens again January 1, 2021. Tell a farmer to nominate a school in your area at <a href='http://www.AmericasFarmers.com'>www.AmericasFarmers.com</a>.</p>";
           $('#finalists_container').append(display);
         } else {
           var sortedData = returnData.sort(function (a, b) {

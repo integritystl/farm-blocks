@@ -1,6 +1,6 @@
 #announce_finalists {
 	background-color: $greyLight;
-	padding: 90px 0px 135px;
+	padding: 50px 0px 50px;
 
 	@media screen and (max-width: 767px){
 		padding: 90px 20px 135px 20px;
@@ -49,10 +49,11 @@
 		}
 	}
 	.finalists_year {
-		font-size: 3em;
+		font-size: 40px;
 		line-height: .9333;
 		letter-spacing: 0.01562rem;
-		font-family: $knockout48;
+		text-transform: uppercase;
+		font-family: "Knockout 29 A", "Knockout 29 B";
 		font-weight: 400;
 	}
 	.finalists_state_select {

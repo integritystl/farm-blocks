@@ -7,7 +7,7 @@
 //var_dump('sane'); die;
 // Grab the relevant fields
 //Which program is this?
-$program = get_field('program');
+$program = get_field('announce_program');
 //What's the relevant key for that program?
 $programKey = get_field('program_key', $program);
 //What phase is that program in?
@@ -22,7 +22,7 @@ if(in_array('finalists', $currentPhase)):
 
 	<div id="announce_finalists" data-program="<?php echo $program;?>" class="<?php echo $programKey; ?>">
 		<h4 class="announce_finalists_title">
-			Grow <span class="announce_finalists_program_title"><?php echo $programKey; ?></span>
+			Grow <span class="announce_finalists_program_title"><?php echo $programKey; ?> Education</span>
 		</h4>
 		<h2 class="finalists_year"><?php echo get_field('year_display_header'); ?> Finalists</h2>
 		<div class="announce_finalists_blurb">
